@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OCR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <video src="./Logo-2-[remix] (5).mp4" autoplay loop muted></video>
+        </div>
+        <div class="home"><a class="nav-link" href="">Home</a></div>
+        <div class="home"><a class="nav-link" href="">Online OCR</a></div>
+        <div class="home"><a class="nav-link" href="">Help & Support</a></div>
+        <div class="home"><a class="nav-link" href="">About Us</a></div>
+        <div class="lang">
+          <a class="nav-link" href="/bangla.html">bangla</a>
+        </div>
+      </div>
+    </header>
+    <div class="mainsect">
+      <div class="row">
+        <div class="imglogo">
+          <img src="/New folder/upload.png" alt="" />
+          <strong>Upload File</strong>
+        </div>
+        <div class="imglogo">
+          <img src="./New folder/start.png" alt="" /> <strong>Start OCR</strong>
+        </div>
+        <div class="imglogo">
+          <img src="./New folder/result.png" alt="" /><strong
+            >Get Result</strong
+          >
+        </div>
+        <div class="imglogo">
+          <img src="./New folder/overlay.png" alt="" /><strong
+            >Check Overlay</strong
+          >
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="bgc">
+        <h1 id="element"></h1>
+        <p>Convert illegible images and PDF to legible text</p>
+        <div class="outer-container">
+          <div class="container hidden">
+            <div class="primary-button">
+              <img src="./cloud-computing.png" alt="" />
+              <label for="">Upload file</label>
+              <input id="start" type="file" />
+            </div>
+            <div class="converted-file">
+                <div>
+                    <img id="img" src="" alt="">
+                </div>
+            </div>
+            <div class="progress"></div>
+            <div class="button-container">
+              <button class="btn">Start OCR</button>
+              <button class="btn btn2">Refresh</button>
+            </div>
+          </div>
+          <div class="container hidden">
+            <textarea placeholder="Your text will apear here"></textarea>
+          </div>
+        </div>
+
+        <div class="privacy">
+          <img src="./privacy.svg" alt="" />
+          <p>
+            Data security comes first – We'll never sell or share your data. For
+            more details, here’s our
+            <a id="privacy-pol" href="/policy.html">Privacy Policy</a>
+          </p>
+        </div>
+        <div class="step">
+          <div class="firststep hidden">
+            <img src="./first.svg" alt="" />
+            <p>Upload Images or PDF Files</p>
+            <span
+              >Select files from your computer, or just drag and drop into the
+              upload box.</span
+            >
+          </div>
+          <div class="firststep hidden">
+            <img src="./second.svg" alt="" />
+            <p>Convert to text</p>
+            <span
+              >Our online OCR tool automatically recognizes content in your
+              files and converts it into editable text.</span
+            >
+          </div>
+          <div class="firststep hidden">
+            <img src="./third.svg" alt="" />
+            <p>Download text file</p>
+            <span>Download your converted text file within seconds..</span>
+          </div>
+        </div>
+        <div class="uses">
+          <h2 class="hidden">Illegible to legible text converter - what is this?</h2>
+          <div class="paragraphs hidden">
+            <p>
+              Online OCR tool is the Image to text conveter based on optical
+              character recognition technology, Use our service to extract text
+              and characters from the PDF and Images that cannot be easily
+              readable.
+            </p>
+            <p>
+              If you have parchment or ancient document and having dificulty in
+              deciphering the text due to its age, degradation or antiquated
+              writing style, our service is the best solution.
+            </p>
+            <p>
+              you don't need to waste time - just upload the file and convert
+              image to redable text.
+            </p>
+            <p>
+              Using advanced image pre-processing algorithms and OCR technology,
+              our service scans text from your images and extracts it to any
+              editable format.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="left-footer center hidden">
+        <p>Contact</p>
+        <span>mail@gmail.com</span>
+        <span>827-164-921</span>
+      </div>
+      <div class="right-footer center hidden">
+        <input type="text" placeholder="Name" />
+        <input type="email" placeholder="Email" />
+        <textarea placeholder="Type your message here..."></textarea>
+        <button>Submit</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/tesseract.js@v2.0.0-alpha.13/dist/tesseract.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Optical Character Recognition(OCR)"],
+        typeSpeed: 60,
+      });
+    </script>
+  </body>
+</html>
+ 
